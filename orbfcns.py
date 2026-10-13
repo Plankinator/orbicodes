@@ -36,7 +36,7 @@ def CStumpff(z):
         C = 1/2
     return C
 
-def lagrangePropagatorUniversal(R0, V0, dt, mu=3.98600418E14, tol = 1e-8):
+def lagrangePropagator(R0, V0, dt, mu=3.98600418E14, tol = 1e-8):
     """
     Propagates an orbit given an initial position and velocity vector by amount
     of time dt, using lagrange coefficients with universal variables. Does not
@@ -126,7 +126,7 @@ def setAxesEqual(ax):
     ax.set_ylim3d(range)
     ax.set_zlim3d(range)
     ax.set_box_aspect([1, 1, 1])
-    return
+    return ax
 
 def getPeriod(R0, V0, mu=3.98600418E14):
     """

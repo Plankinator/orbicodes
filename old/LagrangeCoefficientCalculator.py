@@ -4,6 +4,8 @@ Created on Tue Oct  6 20:38:03 2026
 
 @author: plank
 
+This is a standalone script that simply calculates and plots an orbit based on
+Lagrange coefficients in standard variables
 """
 import matplotlib.pyplot as plt
 import numpy as np
